@@ -1,0 +1,23 @@
+[header]
+type=preset
+application=Advanced Renamer 3.72
+application_version=3720000
+batchmode=rename
+
+[namecollision]
+separator=_
+pattern=
+rule=fail
+
+[methods]
+method0000=methodname:"removepattern"; active:"1"; pattern:"\[.*?\]|\(.*?\)|\{.*?\}|v[0-9]|-SAiNTS|-WAT| END"; casesensitive:"0"; regularexpressions:"1"; applyto:"name";
+method0001=methodname:"removepattern"; active:"1"; pattern:"DVDRip|XviD|-FoV"; casesensitive:"0"; regularexpressions:"1"; applyto:"name";
+method0002=methodname:"removepattern"; active:"0"; pattern:"S[0-9]{2}"; casesensitive:"0"; regularexpressions:"1"; applyto:"name";
+method0003=methodname:"renumber"; active:"1"; numberposition:"1"; change:"relative"; newnumber:"0"; skip:"1"; zeropad:"manual"; numberlength:"2"; applyto:"name"; negativenumbers:"0";
+method0004=methodname:"replace"; active:"1"; replace:"_"; replacewith:" "; casesensitive:"0"; regularexpressions:"0"; applyto:"name"; occurrence:"0";
+method0005=methodname:"replace"; active:"1"; replace:" +|_|\."; replacewith:" "; casesensitive:"0"; regularexpressions:"1"; applyto:"name"; occurrence:"0";
+method0006=methodname:"replace"; active:"1"; replace:" +\."; replacewith:"."; casesensitive:"0"; regularexpressions:"1"; applyto:"nameandextension"; occurrence:"0";
+method0007=methodname:"replace"; active:"1"; replace:"Amnesia - "; replacewith:"Amnesia - E"; casesensitive:"0"; regularexpressions:"0"; applyto:"name"; occurrence:"1";
+method0008=methodname:"renumber"; active:"0"; numberposition:"1"; change:"relative"; newnumber:"-201"; skip:"1"; zeropad:"manual"; numberlength:"2"; applyto:"name"; negativenumbers:"0";
+method0009=methodname:"renumber"; active:"0"; numberposition:"2"; change:"relative"; newnumber:"167"; skip:"1"; zeropad:"manual"; numberlength:"2"; applyto:"name"; negativenumbers:"0";
+method0010=methodname:"add"; active:"0"; position:"0"; add:"The Legend of Korra - S04E"; backwards:"0"; applyto:"name"; regularexpressions:"0";
